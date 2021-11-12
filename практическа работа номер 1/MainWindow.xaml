@@ -1,0 +1,28 @@
+﻿<Window x:Class="практическа_работа_номер_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:практическа_работа_номер_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="350">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Рассчитать" Click="ResultOutput"></MenuItem>
+                <MenuItem Header="Выход" Click="Exit_Button"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Click="Info_Button"></MenuItem>
+        </Menu>
+        <TextBox x:Name="arrayOutput" HorizontalAlignment="Left" Height="208" Margin="192,49,0,0" TextWrapping="Wrap" IsReadOnly="True" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="maximalNumber" HorizontalAlignment="Left" Height="23" Margin="10,193,0,0" TextWrapping="Wrap" IsReadOnly="True" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="inputBox" HorizontalAlignment="Left" Height="23" Margin="10,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="75" Click="ResultOutput"/>
+        <Label Content="Введите количество чисел" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top"/>
+        <Label Content="Максимальное число" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Вывод всех чисел" HorizontalAlignment="Left" Margin="192,23,0,0" VerticalAlignment="Top"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="104,241,0,0" Click="Exit_Button" VerticalAlignment="Top" Width="75"/>
+        <Button Content="О программе" HorizontalAlignment="Left" Margin="10,241,0,0" Click="Info_Button" VerticalAlignment="Top" Width="89"/>
+
+    </Grid>
+</Window>
