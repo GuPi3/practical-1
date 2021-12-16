@@ -31,7 +31,7 @@ namespace практическа_работа_номер_1
         {
             arrayOutput.Clear();
             bool f = Int32.TryParse(inputBox.Text, out int tryParseResult);
-            if (f == true)
+            try
             {
                 ProgramModules.SumEvenWithOut(Convert.ToInt32(inputBox.Text), out int max, out string numbers);
                 for (int i = 0; i < numbers.Length; i++)
@@ -41,7 +41,7 @@ namespace практическа_работа_номер_1
                 }
                 maximalNumber.Text = max.ToString();
             }
-            else
+            catch
             {
                 MessageBox.Show("Ошибка");
             }
